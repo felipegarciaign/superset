@@ -156,6 +156,9 @@ superset init
 
 # To start a development web server on port 8088, use -p to bind to another port
 superset run -p 8088 --with-threads --reload --debugger
+## use superset run -p 8088 -h 0.0.0.0 --with-threads --reload --debugger
+## The -h 0.0.0.0 flag binds the Superset server to all network interfaces, making it accessible from external devices on the network.
+## This is useful if you want to access Superset from another machine or expose it beyond localhost.
 ```
 
 If everything worked, you should be able to navigate to `hostname:port` in your browser (e.g.
